@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calculadora de Mantenimiento — MotoMecánica</title>
+    <link rel="stylesheet" href="../static/style.css">
+  </head>
+
+  <body>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="diagnostico.html">Diagnóstico</a>
+      <a href="mantenimiento.html">Mantenimiento</a>
+      <a href="guia.html">Guía</a>
+      <a href="checklist.html">Checklist</a>
+    </nav>
+
+    <header>
+      <h1>Calculadora de Mantenimiento</h1>
+      <p>
+        Ingresa los datos de tu moto y calcula qué revisiones tienes pendientes.
+      </p>
+    </header>
+
+    <main>
+      <section>
+        <form>
+          <label for="tipo">Tipo de moto:</label><br />
+          <select id="tipo">
+            <option value="">-- Selecciona --</option>
+            <option value="urbana">Urbana (100–150cc)</option>
+            <option value="deportiva">Deportiva (200–600cc)</option>
+            <option value="scooter">Scooter</option></select
+          ><br /><br />
+
+          <label for="km">Kilometraje actual:</label><br />
+          <input type="number" id="km" placeholder="Ej: 15000" /><br /><br />
+
+          <label for="km-aceite">Km del último cambio de aceite:</label><br />
+          <input
+            type="number"
+            id="km-aceite"
+            placeholder="Ej: 13000"
+          /><br /><br />
+
+          <button type="button" id="btnCalcular">Calcular</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>MotoMecánica Web — Proyecto académico</p>
+    </footer>
+
+    <script src="../static/app.js"></script>
+  </body>
+</html>
