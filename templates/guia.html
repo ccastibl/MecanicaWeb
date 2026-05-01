@@ -1,48 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Guía de Mantenimiento — MotoMecánica</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Guía de Mantenimiento — MotoMecánica</title>
-  <link rel="stylesheet" href="../static/style.css">
-</head>
+  <body>
+    <nav>
+      <a href="/">Inicio</a>
+      <a href="/diagnostico">Diagnóstico</a>
+      <a href="/mantenimiento">Mantenimiento</a>
+      <a href="/guia">Guía</a>
+      <a href="/checklist">Checklist</a>
+    </nav>
 
-<body>
+    <header>
+      <h1>Guía de Mantenimiento</h1>
+      <p>Aprende paso a paso a hacer el mantenimiento básico de tu moto.</p>
+    </header>
 
-  <nav>
-    <a href="index.html">Inicio</a>
-    <a href="diagnostico.html">Diagnóstico</a>
-    <a href="mantenimiento.html">Mantenimiento</a>
-    <a href="guia.html">Guía</a>
-    <a href="checklist.html">Checklist</a>
-  </nav>
+    <main>
+      <section>
+        <form>
+          <label for="guia-select">Selecciona una guía:</label><br />
+          <select id="guia-select">
+            <option value="">-- Selecciona --</option>
+            <option value="aceite">Cómo cambiar el aceite</option>
+            <option value="cadena">Cómo tensar la cadena</option>
+            <option value="llantas">Cómo revisar las llantas</option></select
+          ><br /><br />
 
-  <header>
-    <h1>Guía de Mantenimiento</h1>
-    <p>Aprende paso a paso a hacer el mantenimiento básico de tu moto.</p>
-  </header>
+          <button type="button" id="btnGuia">Ver guía</button>
+        </form>
+      </section>
+    </main>
 
-  <main>
-    <section>
-      <form>
-        <label for="guia-select">Selecciona una guía:</label><br>
-        <select id="guia-select">
-          <option value="">-- Selecciona --</option>
-          <option value="aceite">Cómo cambiar el aceite</option>
-          <option value="cadena">Cómo tensar la cadena</option>
-          <option value="llantas">Cómo revisar las llantas</option>
-        </select><br><br>
+    <footer>
+      <p>MotoMecánica Web — Proyecto académico</p>
+    </footer>
 
-        <button type="button" id="btnGuia">Ver guía</button>
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    <p>MotoMecánica Web — Proyecto académico</p>
-  </footer>
-
-  <script src="../static/app.js"></script>
-</body>
-
+    <script src="/app.js"></script>
+  </body>
 </html>

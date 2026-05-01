@@ -1,46 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Diagnóstico de Fallas — MotoMecánica</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Diagnóstico de Fallas — MotoMecánica</title>
-  <link rel="stylesheet" href="../static/style.css">
-</head>
+  <body>
+    <nav>
+      <a href="/">Inicio</a>
+      <a href="/diagnostico">Diagnóstico</a>
+      <a href="/mantenimiento">Mantenimiento</a>
+      <a href="/guia">Guía</a>
+      <a href="/checklist">Checklist</a>
+    </nav>
 
-<body>
+    <header>
+      <h1>Diagnóstico de Fallas</h1>
+      <p>Selecciona los síntomas de tu moto y obtén posibles causas.</p>
+    </header>
 
-  <nav>
-    <a href="index.html">Inicio</a>
-    <a href="diagnostico.html">Diagnóstico</a>
-    <a href="mantenimiento.html">Mantenimiento</a>
-    <a href="guia.html">Guía</a>
-    <a href="checklist.html">Checklist</a>
-  </nav>
+    <main>
+      <section>
+        <form>
+          <input type="checkbox" id="s1" />
+          <label for="s1">La moto no enciende</label><br />
+          <input type="checkbox" id="s2" />
+          <label for="s2">Sale humo excesivo</label><br />
+          <input type="checkbox" id="s3" />
+          <label for="s3">Ruido extraño al frenar</label><br />
+          <input type="checkbox" id="s4" />
+          <label for="s4">Pierde potencia</label><br />
+          <input type="checkbox" id="s5" />
+          <label for="s5">Se recalienta el motor</label><br />
 
-  <header>
-    <h1>Diagnóstico de Fallas</h1>
-    <p>Selecciona los síntomas de tu moto y obtén posibles causas.</p>
-  </header>
+          <button type="button" id="btnDiagnosticar">Diagnosticar</button>
+        </form>
+      </section>
+    </main>
 
-  <main>
-    <section>
-      <form>
-        <input type="checkbox" id="s1"> <label for="s1">La moto no enciende</label><br>
-        <input type="checkbox" id="s2"> <label for="s2">Sale humo excesivo</label><br>
-        <input type="checkbox" id="s3"> <label for="s3">Ruido extraño al frenar</label><br>
-        <input type="checkbox" id="s4"> <label for="s4">Pierde potencia</label><br>
-        <input type="checkbox" id="s5"> <label for="s5">Se recalienta el motor</label><br>
+    <footer>
+      <p>MotoMecánica Web — Proyecto académico</p>
+    </footer>
 
-        <button type="button" id="btnDiagnosticar">Diagnosticar</button>
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    <p>MotoMecánica Web — Proyecto académico</p>
-  </footer>
-
-  <script src="../static/app.js"></script>
-</body>
-
+    <script src="/app.js"></script>
+  </body>
 </html>
